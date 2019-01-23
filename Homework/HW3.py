@@ -162,7 +162,6 @@ class aList:
     def reverse(self):
         for i in range(len(self)//2):
             self [i], self [-(i+1)] = self [-(i+1)], self [i]
-        return self
             
     def revitr (self):
         for i in range (-1, -1 * self._n - 1, - 1):
@@ -198,7 +197,8 @@ def main ():
     F = aList ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     print (F [522])    
     print (F [3 : 5])
-    print (F.reverse ())
+    F.reverse ()
+    print (F)
     V = aList (F.revitr())
     print (V)
     
